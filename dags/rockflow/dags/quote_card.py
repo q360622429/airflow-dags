@@ -10,7 +10,7 @@ quote_card_renew = DAG(
     "quote_card_renew",
     catchup=False,
     start_date=pendulum.datetime(2022, 6, 1),
-    schedule_interval='0 */2 1,2,3 * *',
+    schedule_interval='0 */2 1,2 * *',
     default_args={
         "owner": "hujing",
         "depends_on_past": False,
